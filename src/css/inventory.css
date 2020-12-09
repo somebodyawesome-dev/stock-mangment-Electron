@@ -1,0 +1,114 @@
+body {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+p {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  vertical-align: middle;
+}
+main {
+  padding: 0;
+  margin: 0;
+  margin-left: 5rem;
+}
+
+.inv-box {
+  overflow: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45rem;
+  height: 25rem;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.title {
+  width: 100%;
+  height: 1rem;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.75rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.inv-box .item-box {
+  width: 100%;
+  height: 2rem;
+  margin: 10px 0;
+
+  display: flex;
+  flex-direction: row;
+  font-size: 0.75rem;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  padding: 0px 4px;
+}
+.inv-box .item-box:hover {
+  background-color: orange;
+}
+.item-box .info-box {
+  width: 14%;
+}
+.title .info-title {
+  text-align: center;
+  width: 17%;
+  color: orange;
+  font-size: 0.75rem;
+}
+.shortage {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 2px hsla(0, 95%, 35%, 1);
+  background: hsla(67, 95%, 95%, 1);
+}
+
+.arrow-box {
+  background: rgba(243, 243, 243, 0.7);
+  position: absolute;
+  top: 3rem;
+  left: 20rem;
+  width: 7rem;
+  height: 2rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.arrow-box a {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 5px;
+  margin: 0;
+  width: 50%;
+  text-decoration: none;
+  color: orange;
+  text-align: center;
+  box-shadow: 0 0 10px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.arrow-box a:hover {
+  color: gray;
+  background-color: orange;
+}

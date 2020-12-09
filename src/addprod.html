@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add new Product</title>
+    <link rel="stylesheet" href="css/addprod.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <img src="images/home.svg" />
+            <span class="link-text">Home</span>
+          </a>
+        </li>
+        <li class="nav-item" id="selected">
+          <a href="#" class="nav-link">
+            <img src="images/add.svg" />
+            <span class="link-text">Add new Prod</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="inventory.html" class="nav-link">
+            <img src="images/inventory.svg" />
+            <span class="link-text">Inventory</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="sellitem.html" class="nav-link">
+            <img src="images/sell.svg" />
+            <span class="link-text">Sell Products</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="progress.html" class="nav-link">
+            <img src="images/progress-report.svg" />
+            <span class="link-text">History Log</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="form-box">
+        <form>
+          <div class="user-box">
+            <div class="select">
+              <select name="slct" id="slct">
+                <option selected disabled>Type</option>
+                <option value="Keys">Keys</option>
+                <option value="Key shells">Key shells</option>
+                <option value="Key transponders">Key transponders</option>
+                <option value="Batteries">Batteries</option>
+              </select>
+            </div>
+          </div>
+          <div class="user-box">
+            <input type="text" class="inputText" id="ref" required />
+            <label>Reference</label>
+          </div>
+          <div class="user-box">
+            <input type="text" class="inputText" id="prod" required />
+            <label>Name of Product</label>
+          </div>
+          <div class="user-box">
+            <input type="text" class="inputText" id="quantity" required />
+            <label>Quantity</label>
+          </div>
+          <div class="user-box">
+            <input type="text" class="inputText" id="buyPrice" required />
+            <label>Buy Price</label>
+          </div>
+          <div class="user-box">
+            <input type="text" class="inputText" id="sellPrice" required />
+            <label>Sell Price</label>
+          </div>
+          <div class="user-box">
+            <input
+              type="text"
+              class="inputText"
+              id="minimumQuantity"
+              required
+            />
+            <label>Minimum Quantity</label>
+          </div>
+
+          <a href="#" id="addButton">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Add
+          </a>
+        </form>
+      </div>
+    </main>
+
+    <script defer src="js/addnewprod.js"></script>
+  </body>
+</html>

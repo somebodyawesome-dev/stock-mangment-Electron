@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sell Items</title>
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/sellitem.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <img src="images/home.svg" />
+            <span class="link-text">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="addprod.html" class="nav-link">
+            <img src="images/add.svg" />
+            <span class="link-text">Add new Prod</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="inventory.html" class="nav-link">
+            <img src="images/inventory.svg" />
+            <span class="link-text">Inventory</span>
+          </a>
+        </li>
+        <li class="nav-item" id="selected">
+          <a href="#" class="nav-link">
+            <img src="images/sell.svg" />
+            <span class="link-text">Sell Products</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="progress.html" class="nav-link">
+            <img src="images/progress-report.svg" />
+            <span class="link-text">History Log</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="search-box">
+        <input type="text" class="searchbar" id="searchbar" value="" required />
+        <label>Search..</label>
+      </div>
+
+      <div class="inv-box" id="inv-box">
+        <div class="item-box" id="REFERENCE-NAME">
+          <p>REFERENCE</p>
+          <p>NAME</p>
+          <div class="btn-box">
+            <button class="btn minusButt">-</button>
+            <input type="text" value="0" />
+            <button class="btn plusButt">+</button>
+          </div>
+        </div>
+      </div>
+
+      <p id="sellText">Sell Price : <span id="totalprice">0</span>millimes</p>
+      <a href="#" id="saveBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Sell
+      </a>
+    </main>
+    <script defer src="js/sellitems.js"></script>
+  </body>
+</html>

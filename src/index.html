@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home!</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item" id="selected">
+          <a href="#" class="nav-link">
+            <img src="images/home.svg" />
+            <span class="link-text">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="addprod.html" class="nav-link">
+            <img src="images/add.svg" />
+            <span class="link-text">Add new Prod</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="inventory.html" class="nav-link">
+            <img src="images/inventory.svg" />
+            <span class="link-text">Inventory</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="sellitem.html" class="nav-link">
+            <img src="images/sell.svg" />
+            <span class="link-text">Sell Products</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="progress.html" class="nav-link">
+            <img src="images/progress-report.svg" />
+            <span class="link-text">History Log</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <div class="container">
+        <div class="cnt">
+          <span class="title"><p>Keys</p> </span>
+        </div>
+        <div class="info" id="keysBuy">total buy</div>
+        <div class="info" id="keysSell">total earning</div>
+      </div>
+
+      <div class="container">
+        <div class="cnt">
+          <span class="title"><p>Keys Shell</p> </span>
+        </div>
+        <div class="info" id="shellBuy">total buy</div>
+        <div class="info" id="shellSell">total earning</div>
+      </div>
+
+      <div class="container">
+        <div class="cnt">
+          <span class="title"><p>Key transponders</p> </span>
+        </div>
+        <div class="info" id="transBuy">total buy</div>
+        <div class="info" id="transSell">total earning</div>
+      </div>
+
+      <div class="container">
+        <div class="cnt">
+          <span class="title"><p>Batteries</p> </span>
+        </div>
+        <div class="info" id="battBuy">total buy</div>
+        <div class="info" id="battSell">total earning</div>
+      </div>
+
+      <div class="container">
+        <div class="cnt">
+          <span class="title"><p>live total</p> </span>
+        </div>
+        <div class="info" id="totalBuy">total buy</div>
+        <div class="info" id="totalSell">total earning</div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
